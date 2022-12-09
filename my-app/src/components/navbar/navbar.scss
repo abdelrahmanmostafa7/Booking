@@ -1,0 +1,37 @@
+@import "../../global.scss";
+
+.navbar {
+    height: 50px;
+    background-color:$mainColor;
+    display: flex;
+    justify-content: center;
+
+    .navContainer {
+        width: 100%;
+        max-width: 1080px;
+        background-color: $mainColor;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+
+    .navButton {
+        margin-left: 5px;
+        border: 1px solid white;
+        padding: 5px 10px;
+        cursor: pointer;
+        color: white;
+        background-color: $mainColor;
+        font-size: 15px;
+        border-radius: 5pc;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,131 @@
+@import "../../global.scss";
+
+.header{
+    background-color: $mainColor;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+    .headerContainer {
+        width: 100%;
+        max-width: 1024px;
+        margin: 30px 0px 100px 0px;
+    }
+    .headerContainer.listMode{
+        margin:30px 0px 0px 0px;
+
+    }
+
+        .headerList {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .headerList.listMode{
+            justify-content: center;
+        }
+
+    .headerListItem{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+
+        &.active{
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 5pc;
+        }
+    }
+
+            .headerDesc {
+                margin: 20px 0px;
+            }
+            
+            .headerBtn {
+                    background-color: $mainColor;
+                    color: white;
+                    font-weight: 500;
+                    border: 1px solid white;
+                    padding: 10px;
+                    cursor: pointer;
+                    border-radius: 5pc;
+            }
+        
+
+        .headerSearch{
+            height: 30px;
+            background-color: #fff;
+            border: 3px solid $mainColor;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0px;
+            border-radius: 5pc;
+            position: absolute;
+            bottom: -25px;
+            width: 100%;
+            max-width: 1024px;
+
+            .headerSearchItem{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .headerIcon {
+                        color: lightgray;
+                    }
+                .headerSearchInput{
+                    border: none;
+                    outline: none;
+                }
+                .headerSearchText{
+                    color: lightgray;
+                    cursor: pointer;
+                }
+              .headerBtn{
+                font-size: 15px;
+                font-weight: 500;
+              }
+              .date{
+                position: absolute;
+                top: 50px;
+                z-index: 3;
+              }
+              .options{
+                z-index: 3;
+                position: absolute;
+                top: 50px;
+                background-color: white;
+                color: gray;
+                border-radius: 5px;
+                -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+                    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+
+                    .optionItem{
+                        width: 200px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+
+                        .optionCounter{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            color: black;
+                        }
+                        .optionCounterButton{
+                            width: 30px;
+                            height: 30px;
+                            background-color: white;
+                            border: 1px solid $mainColor;
+                            color: $mainColor;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+}
